@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Stage } from '@react-three/drei';
+import Mclaren from './components/models/McClaren/Mclaren-Senna';
+import CameraControls from './components/CameraControls'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Canvas gl={{ preserveDrawingBuffer: true }} shadows dpr={[1, 1.5]} camera={{ position: [0, 0, 150], fov: 50 }}>
+     <CameraControls />
+     {/* <ambientLight intensity={0.5} /> */}
+     <directionalLight intensity={0.1} />
+
+     <Suspense fallback={null} >
+       <Stage>
+       <Mclaren />
+       </Stage>
+     </Suspense>
+   </Canvas>
   );
 }
 
