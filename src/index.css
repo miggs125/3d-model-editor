@@ -10,3 +10,10 @@ body,
   margin: 0;
   padding: 0;
 }
+
+#color-picker {
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 2rem;
+}
