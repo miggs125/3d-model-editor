@@ -8,7 +8,7 @@ import ModelContext from '../../ModelContext/ModelContext';
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF('/Mclaren-Senna.glb')
+  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/Mclaren-Senna.glb`)
   const state = useContext(ModelContext);
   const {setModelContext} = state
 

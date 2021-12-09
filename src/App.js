@@ -37,9 +37,9 @@ const App = () => {
 				<directionalLight intensity={0.1} />
 				<Suspense fallback={null} >
 					<Stage>
-				<ModelContext.Provider value={{setModelContext, ...state}}>
-						<Mclaren />
-		</ModelContext.Provider>
+						<ModelContext.Provider value={{setModelContext, ...state}}>
+							<Mclaren />
+						</ModelContext.Provider>
 					</Stage>
 				</Suspense>
 			</Canvas>
