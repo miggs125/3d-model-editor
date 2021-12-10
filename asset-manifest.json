@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/3d-model-editor/static/css/main.ce234b2c.chunk.css",
-    "main.js": "/3d-model-editor/static/js/main.08549530.chunk.js",
-    "main.js.map": "/3d-model-editor/static/js/main.08549530.chunk.js.map",
+    "main.js": "/3d-model-editor/static/js/main.ea155948.chunk.js",
+    "main.js.map": "/3d-model-editor/static/js/main.ea155948.chunk.js.map",
     "runtime-main.js": "/3d-model-editor/static/js/runtime-main.fb004fcd.js",
     "runtime-main.js.map": "/3d-model-editor/static/js/runtime-main.fb004fcd.js.map",
     "static/js/2.b06a566a.chunk.js": "/3d-model-editor/static/js/2.b06a566a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.fb004fcd.js",
     "static/js/2.b06a566a.chunk.js",
     "static/css/main.ce234b2c.chunk.css",
-    "static/js/main.08549530.chunk.js"
+    "static/js/main.ea155948.chunk.js"
   ]
 }
